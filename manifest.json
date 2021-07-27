@@ -1,0 +1,26 @@
+{
+    "name": "Getting Started Example",
+    "version": "1.0",
+    "description": "Gpa calculator for RUSA-2018",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "GPA Calc",
+        "default_icon": "Images/icons8-calculator-16.png"
+    },
+    "icons": {
+        "16": "Images/icons8-calculator-16.png",
+        "32": "Images/icons8-calculator-32.png",
+        "48": "Images/icons8-calculator-48.png",
+        "128": "Images/icons8-calculator-100.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://acoe.annauniv.edu/*"],
+        "js": ["content.js","jquery-3.6.0.min.js"]
+    }],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions" : ["tabs","notifications"]
+
+}
