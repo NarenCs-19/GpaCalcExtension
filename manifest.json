@@ -3,7 +3,7 @@
     "version": "1.0",
     "description": "Gpa calculator for RUSA-2018",
     "manifest_version": 2,
-    "browser_action": {
+    "page_action": {
         "default_popup": "popup.html",
         "default_title": "GPA Calc",
         "default_icon": "Images/icons8-calculator-16.png"
@@ -21,6 +21,6 @@
     "background": {
         "scripts": ["background.js"]
     },
-    "permissions" : ["tabs","notifications"]
+    "permissions" : ["declarativeContent","tabs","notifications"]
 
 }
